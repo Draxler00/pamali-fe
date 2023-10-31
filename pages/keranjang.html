@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Belajar Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylekeranjang.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+  </head>
+  <!-- AWAL NAVBAR -->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark body-tertiary">
+        <div class="container">
+        <a class="navbar-brand text-white" href="#">
+            <img src="../assets/pamali.png" alt="Logo" width="50" height="44" class="me-2">
+            Pamali Artwork
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <form class="d-flex ms-auto my-4 my-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cari barang anda" aria-label="Search">
+            <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Keranjang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Notifikasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Bantuan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Masuk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Daftar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- AKHIR NAVBAR -->
+
+      <!-- breadcrumb -->
+      <div class="container">
+        <nav aria-label="breadcrumb" style="background-color: #fff;" class="mt-3">
+            <ol class="breadcrumb p-3">
+              <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
+            </ol>
+          </nav>
+      </div>
+
+      <!-- akhir bread -->
+
+      <!-- Keranjang -->
+        <div class="container">
+            <div class="row">
+                <div class="col table-responsive">
+                    <table class="table">
+                        <thead class="table-secondary">
+                          <tr class="th.heaader">
+                            <th scope="col" class="th.heaader">Hapus</th>
+                            <th scope="col" class="th.heaader">gambar</th>
+                            <th scope="col" class="th.heaader">nama produk</th>
+                            <th scope="col" class="th.heaader">harga</th>
+                            <th scope="col" class="th.heaader">Jumlah</th>
+                            <th scope="col" class="th.heaader">Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><a href=""><i class="fas fa-trash-alt" style="color: #000000;"></i></a></th>
+                            <td><img src="../assets/produk/gelang.jpeg" class="img-keranjang"></td>
+                            <td>batik bracelet</td>
+                            <td>45.000</td>
+                            <td><button type="button" class="btn btn-light btn-dark"><i class="fas fa-minus" style="color: white;"></i></button>
+                                <span style="color: #000000;" class="mx-2">3</span>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-plus" style="color: white;"></i></button></td>
+                            <td>135.000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href=""><i class="fas fa-trash-alt" style="color: #000000;"></i></a></th>
+                            <td><img src="../assets/produk/pants coklat.jpeg" class="img-keranjang"></td>
+                            <td>coffe pants</td>
+                            <td>250.000</td>
+                            <td>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-minus" style="color: white;"></i></button>
+                                <span style="color: #000000;" class="mx-2">1</span>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-plus" style="color: white;"></i></button>
+                            </td>
+                            <td>250.000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href=""><i class="fas fa-trash-alt" style="color: #000000;"></i></a></th>
+                            <td><img src="../assets/produk/kolorijo.jpeg" class="img-keranjang"></td>
+                            <td>summer pants green</td>
+                            <td>50.000</td>
+                            <td>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-minus" style="color: white;"></i></button>
+                                <span style="color: #000000;" class="mx-2">2</span>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-plus" style="color: white;"></i></button>
+                            </td>
+                            <td>100.000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><a href=""><i class="fas fa-trash-alt" style="color: #000000;"></i></a></th>
+                            <td><img src="../assets/produk/colorpink.jpeg" class="img-keranjang"></td>
+                            <td>summer pants</td>
+                            <td>50.000</td>
+                            <td>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-minus" style="color: white;"></i></button>
+                                <span style="color: #000000;" class="mx-2">2</span>
+                                <button type="button" class="btn btn-light btn-dark"><i class="fas fa-plus" style="color: white;"></i></button>
+                            </td>
+                            <td>100.000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            
+            <div class="row">
+              <div class="col">
+                <img src="https://myfluba.com/wp-content/uploads/2022/12/Gif-Arifin.gif" alt="" srcset="" style="height: 100pxw;">
+              </div>
+              <div class="col table-responsive">
+                <table class="table ms-auto" id="table-checkout">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th scope="col" colspan="2" class="text-center">Total Harga Keranjang</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Total Harga</td>
+                      <td>987.000</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <div class="btn-checout d-grid">
+                          <button class="btn btn-dark btn-sm mx-4">Checkout</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      <!-- Keranjang -->
+
+       <!-- Footer -->
+       <footer class="bg-light p-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <a href="#">
+                <img src="../assets/p-black-list.jpeg" style="width: 80px;">
+              </a>
+              <span>Copyright @2019 | Created by <a href="https://www.instagram.com/pamali.artwork/?hl=en" class="text-form">pamali.Artwork</a></span>
+            </div>
+
+                <div class="col text-end">
+                  <a href="#">
+                    <i class="fab fa-facebook fa-3x" style="color: #000000;"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram-square fa-3x" style="color: #000000;"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter fa-3x" style="color: #000000;"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-whatsapp fa-3x" style="color: #000000;"></i>
+                  </a>
+                </div>
+          </div>
+        </div>
+       </footer>
+       <!-- Akhir Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
